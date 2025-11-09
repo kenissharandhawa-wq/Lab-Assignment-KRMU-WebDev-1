@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6;
+    background-color: #e6e6fa;
+    color: #333; 
+}
+
+
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 1rem 2rem;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #6a0dad; 
+}
+
+header nav ul {
+    list-style: none; 
+    display: flex; 
+}
+
+header nav li {
+    margin-left: 1.5rem; 
+}
+
+header nav a {
+    text-decoration: none; 
+    color: #6a0dad;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+header nav a:hover {
+    color: #19181b;
+}
+
+main {
+    padding-top: 80px; 
+    max-width: 900px; 
+    margin: 0 auto; 
+}
+
+article, section {
+    background: #fff; 
+    margin-bottom: 1.5rem; 
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+article h1 {
+    color: #6a0dad;
+}
+
+#About img {
+    display: block; 
+    margin: 0 auto 1rem auto; 
+    border-radius: 50%; 
+    border: 3px solid #eee;
+}
+
+main section ul {
+    list-style: none; 
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+main section ul p {
+    margin-left: 0;
+}
+#Technical-Skills {
+
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 1rem;
+}
+
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead tr {
+    background-color: #6a0dad;
+    color: #fff;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+#Contact form label {
+    display: block; 
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#Contact form input[type="text"],
+#Contact form textarea {
+    width: 100%; 
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#Contact form button {
+    display: block;
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+#Contact form button:hover {
+    background-color: #4f0a7f;
+}
+footer{
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: #333;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; 
+        padding: 1rem;
+    }
+
+    header nav {
+        margin-top: 0.5rem;
+    }
+
+    header nav li {
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+
+    main {
+        padding-top:120px;
+    }
+}
